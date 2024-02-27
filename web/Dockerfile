@@ -8,8 +8,8 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Copy the logo image and background video to the appropriate directory inside the container
-COPY logo.png /usr/share/nginx/html
-COPY trading5.mp4 /usr/share/nginx/html
+COPY logo.png .
+COPY trading5.mp4 .
 
 
 # Install dependencies
