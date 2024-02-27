@@ -6,6 +6,8 @@ WORKDIR /app
 
 # Copy the requirements file into the container at /app
 COPY requirements.txt .
+COPY trading.mp4 .
+COPY logo.png .
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
