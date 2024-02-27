@@ -6,8 +6,11 @@ WORKDIR /app
 
 # Copy the requirements file into the container at /app
 COPY requirements.txt .
-COPY trading.mp4 .
-COPY logo.png .
+
+# Copy the logo image and background video to the appropriate directory inside the container
+COPY logo.png /usr/share/nginx/html
+COPY trading5.mp4 /usr/share/nginx/html
+
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
